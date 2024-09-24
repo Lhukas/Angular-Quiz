@@ -6,7 +6,8 @@ import {HttpClient} from "@angular/common/http";
 })
 export class CategorieService {
 
-  quizCategorie: any[] = [];
+    allCategories: any[] = [];
+    quizCategorie: any[] = [];
 
   constructor(private http: HttpClient) { }
 
@@ -21,6 +22,21 @@ export class CategorieService {
             }
 
         });
+    }
+
+    filterCategories(searchTerm: string): void {
+        if (!searchTerm) {
+            this.quizCategorie = this.allCategories;
+        } else {
+            this.quizCategorie = this.allCategories.filter(categorie =>
+                categorie.categoryName.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+        }
+    }
+
+
+    resetFilter(): void {
+        this.quizCategorie = this.allCategories;
     }
 
     resetQuiz() {

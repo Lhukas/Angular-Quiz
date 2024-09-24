@@ -1,6 +1,21 @@
-<h2 class="quiz_title">Bonjour {{ playerName }}, veuilleaz choisir une catégorie !</h2>
+<section>
+    <form #categoryForm="ngForm" (ngSubmit)="onSearchCategory(categoryForm)">
+        <div >
+            <input
+                    type="text"
+                    name="searchTerm"
+                    ngModel
+                    placeholder="Rechercher une catégorie"
+            />
+            <button type="submit">Rechercher</button>
+            <button type="button" (click)="resetFilter(categoryForm)">Réinitialiser</button>
+        </div>
+    </form>
 
-<section class="section-card" *ngFor="let categorie of quizCategorie; let i = index">
-    <h4 class="title" (click)="goQuizCategorie(categorie.id)">{{categorie.name}}</h4>
+    <!-- Liste des catégories filtrées -->
+    <section class="section-card" *ngFor="let categorie of quizCategorie">
+        <h4 class="" (click)="goQuizCategorie(categorie.id)">
+            {{ categorie.name }}
+        </h4>
+    </section>
 </section>
-

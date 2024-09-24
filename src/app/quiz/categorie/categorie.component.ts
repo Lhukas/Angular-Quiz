@@ -3,6 +3,7 @@ import {QuizService} from "../../shared/services/quiz.service";
 import {CategorieService} from "../../shared/services/categorie.service";
 import {compareSegments} from "@angular/compiler-cli/src/ngtsc/sourcemaps/src/segment_marker";
 import {ActivatedRoute, Router} from "@angular/router";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-categorie',
@@ -32,6 +33,16 @@ export class CategorieComponent implements OnInit{
 
   goQuizCategorie(id : number) : void{
     this.router.navigate(['/quiz', id]);
+  }
+
+  onSearchCategory(form: NgForm): void {
+    const searchTerm = form.value.searchTerm;
+    this.categorieService.filterCategories(searchTerm);
+  }
+
+  resetFilter(form: NgForm): void {
+    form.reset();
+    this.categorieService.resetFilter();
   }
 
 }
