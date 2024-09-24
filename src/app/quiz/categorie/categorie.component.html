@@ -1,3 +1,6 @@
-<section class="" *ngFor="let categorie of quizCategorie; let i = index">
-    <h4 class="question_label" (click)="goQuizCategorie(categorie.id)">{{categorie.name}}</h4>
+<h2 class="quiz_title">Bonjour {{ playerName }}, veuilleaz choisir une catégorie !</h2>
+
+<section class="section-card" *ngFor="let categorie of quizCategorie; let i = index">
+    <h4 class="title" (click)="goQuizCategorie(categorie.id)">{{categorie.name}}</h4>
 </section>
+
