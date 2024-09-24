@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {QuizService} from "../../shared/services/quiz.service";
 import {CategorieService} from "../../shared/services/categorie.service";
 import {compareSegments} from "@angular/compiler-cli/src/ngtsc/sourcemaps/src/segment_marker";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-categorie',
@@ -10,7 +11,8 @@ import {compareSegments} from "@angular/compiler-cli/src/ngtsc/sourcemaps/src/se
 })
 export class CategorieComponent implements OnInit{
 
-  constructor(private categorieService : CategorieService) { }
+  constructor(private categorieService : CategorieService,
+              private router: Router) { }
 
   quizCategorie: any[] = this.categorieService.quizCategorie;
 
@@ -21,7 +23,7 @@ export class CategorieComponent implements OnInit{
 
 
   goQuizCategorie(id : number) : void{
-console.log(id)
+    this.router.navigate(['/quiz', id]);
   }
 
 }
