@@ -11,6 +11,7 @@ export class CategorieService {
   constructor(private http: HttpClient) { }
 
   getCategorie() {
+
         this.http.get(`http://localhost:3000/categories`).subscribe((categories: any) => {
             for (const categorie of categories) {
                 this.quizCategorie.push({
