@@ -31,20 +31,168 @@
       "id": "102",
       "questionLabel": "Quelle pierre de l'infinité est utilisée par Doctor Strange ?",
       "categoryId": 1
+    },
+    {
+      "id": "201",
+      "questionLabel": "Quel est le nom civil de Batman ?",
+      "categoryId": 2
+    },
+    {
+      "id": "202",
+      "questionLabel": "Qui est l'ennemi juré de Superman ?",
+      "categoryId": 2
+    },
+    {
+      "id": "301",
+      "questionLabel": "Quel film a remporté l'Oscar du meilleur film en 1994 ?",
+      "categoryId": 3
+    },
+    {
+      "id": "302",
+      "questionLabel": "Quel réalisateur est derrière la trilogie 'Le Seigneur des Anneaux' ?",
+      "categoryId": 3
+    },
+    {
+      "id": "401",
+      "questionLabel": "Quelle série suit les aventures de Walter White, un professeur de chimie devenu fabricant de drogue ?",
+      "categoryId": 4
+    },
+    {
+      "id": "402",
+      "questionLabel": "Dans quelle série se trouve le personnage Jon Snow ?",
+      "categoryId": 4
+    },
+    {
+      "id": "501",
+      "questionLabel": "Qui a écrit 'Les Misérables' ?",
+      "categoryId": 5
+    },
+    {
+      "id": "502",
+      "questionLabel": "Dans quel roman trouve-t-on le personnage de Sherlock Holmes ?",
+      "categoryId": 5
     }
   ],
   "answers": [
     {
       "questionId": 1,
-      "answerLabel": "A reusable building block for the user interface",
+      "answerLabel": "Peter Parker",
       "isCorrect": true,
       "id": "dde8"
     },
     {
       "questionId": 1,
-      "answerLabel": "A style in Angular",
+      "answerLabel": "Tony Stark",
       "isCorrect": false,
       "id": "50e7"
+    },
+    {
+      "questionId": 102,
+      "answerLabel": "Pierre du Temps",
+      "isCorrect": true,
+      "id": "a123"
+    },
+    {
+      "questionId": 102,
+      "answerLabel": "Pierre de l'Âme",
+      "isCorrect": false,
+      "id": "b456"
+    },
+    {
+      "questionId": 201,
+      "answerLabel": "Bruce Wayne",
+      "isCorrect": true,
+      "id": "c789"
+    },
+    {
+      "questionId": 201,
+      "answerLabel": "Clark Kent",
+      "isCorrect": false,
+      "id": "d012"
+    },
+    {
+      "questionId": 202,
+      "answerLabel": "Lex Luthor",
+      "isCorrect": true,
+      "id": "e345"
+    },
+    {
+      "questionId": 202,
+      "answerLabel": "Le Joker",
+      "isCorrect": false,
+      "id": "f678"
+    },
+    {
+      "questionId": 301,
+      "answerLabel": "Forrest Gump",
+      "isCorrect": true,
+      "id": "g910"
+    },
+    {
+      "questionId": 301,
+      "answerLabel": "Pulp Fiction",
+      "isCorrect": false,
+      "id": "h111"
+    },
+    {
+      "questionId": 302,
+      "answerLabel": "Peter Jackson",
+      "isCorrect": true,
+      "id": "i222"
+    },
+    {
+      "questionId": 302,
+      "answerLabel": "James Cameron",
+      "isCorrect": false,
+      "id": "j333"
+    },
+    {
+      "questionId": 401,
+      "answerLabel": "Breaking Bad",
+      "isCorrect": true,
+      "id": "k444"
+    },
+    {
+      "questionId": 401,
+      "answerLabel": "Narcos",
+      "isCorrect": false,
+      "id": "l555"
+    },
+    {
+      "questionId": 402,
+      "answerLabel": "Game of Thrones",
+      "isCorrect": true,
+      "id": "m666"
+    },
+    {
+      "questionId": 402,
+      "answerLabel": "The Witcher",
+      "isCorrect": false,
+      "id": "n777"
+    },
+    {
+      "questionId": 501,
+      "answerLabel": "Victor Hugo",
+      "isCorrect": true,
+      "id": "o888"
+    },
+    {
+      "questionId": 501,
+      "answerLabel": "Honoré de Balzac",
+      "isCorrect": false,
+      "id": "p999"
+    },
+    {
+      "questionId": 502,
+      "answerLabel": "Une étude en rouge",
+      "isCorrect": true,
+      "id": "q000"
+    },
+    {
+      "questionId": 502,
+      "answerLabel": "Le Chien des Baskerville",
+      "isCorrect": false,
+      "id": "r111"
     }
   ],
   "users": [

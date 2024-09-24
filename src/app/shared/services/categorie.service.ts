@@ -11,14 +11,15 @@ export class CategorieService {
   constructor(private http: HttpClient) { }
 
   getCategorie() {
-        this.http.get(`http://localhost:3000/categories`).subscribe((categorie: any) => {
-          this.quizCategorie.push({
-            id: categorie.id,
-            name: categorie.categoryName,
-          });
-        });
+        this.http.get(`http://localhost:3000/categories`).subscribe((categories: any) => {
+            for (const categorie of categories) {
+                this.quizCategorie.push({
+                    id: categorie.categoryId,
+                    name: categorie.categoryName,
+                });
+            }
 
-    console.log(this.quizCategorie)
+        });
     }
 
 }
