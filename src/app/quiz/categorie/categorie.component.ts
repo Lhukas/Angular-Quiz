@@ -12,13 +12,15 @@ import {Router} from "@angular/router";
 export class CategorieComponent implements OnInit{
 
   constructor(private categorieService : CategorieService,
-              private router: Router) { }
+              private router: Router,
+              private quizService : QuizService) { }
 
   quizCategorie: any[] = this.categorieService.quizCategorie;
 
   ngOnInit(): void {
+    this.categorieService.resetQuiz()
     this.categorieService.getCategorie();
-    console.log(this.quizCategorie)
+    this.quizService.resetQuiz()
   }
 
 

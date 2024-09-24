@@ -25,6 +25,7 @@ export class CategorieService {
 
     resetQuiz() {
         this.quizCategorie = [];
+
     }
 
 }
