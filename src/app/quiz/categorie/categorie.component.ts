@@ -19,4 +19,9 @@ export class CategorieComponent implements OnInit{
     console.log(this.quizCategorie)
   }
 
+
+  goQuizCategorie(id : number) : void{
+console.log(id)
+  }
+
 }

@@ -52,6 +52,20 @@ export class QuizService {
     });
   }
 
+  getQuizContentByCategorie(idCategorie : number) {
+    this.http.get('http://localhost:3000/questions?categoryId='+idCategorie).subscribe((questions: any) => {
+      for (const question of questions) {
+        this.http.get(`http://localhost:3000/answers?questionId=${question.id}`).subscribe((answers: any) => {
+          this.quizContent.push({
+            id: question.id,
+            question: question.questionLabel,
+            answers
+          });
+        });
+      }
+    });
+  }
+
   resetQuiz() {
     this.quizContent = [];
     this.playerAnswers = [];
